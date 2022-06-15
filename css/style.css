@@ -111,6 +111,15 @@ h1{
     margin-right: 0.75rem;
 }
 
+/*about*/
+#about{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+#about .column{
+    margin: 2rem;
+}
 /*media query*/
 
 /*tablet*/
@@ -153,6 +162,18 @@ h1{
     #benefits .card {
         width: calc(33.333% - 1.5rem);
     }
+
+    #about .columns {
+        display: flex;
+    }
+
+    #about .column:first-child {
+        width: calc(66.666% - 4rem);
+    }
+
+    #about .column{
+        width: calc(33.333% - 4rem);
+    }
 }
 
 /*desktop*/
@@ -181,6 +202,16 @@ h1{
     #benefits .cards {
         display: flex;
     }
+
+    #about .columns {
+        display: flex;
+    }
+
+    #about .column {
+        width: calc(50% - 4rem);
+    }
+
+
 }
 
 /*desktop grande*/
