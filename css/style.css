@@ -55,7 +55,9 @@
     margin-bottom: 3rem;
 }
 
-
+h1{
+    margin-bottom: 1rem;
+}
 /*sezione main*/
 #intro .card {
     margin-bottom: 1.5rem;
@@ -93,7 +95,21 @@
     margin: 1rem;
 }
 
+/*benefits*/
+#benefits{
+    background-color: var(--secondary-color);
+}
 
+#benefits .cards{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+#benefits .card {
+    margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
 
 /*media query*/
 
@@ -128,6 +144,15 @@
         flex-shrink: 0;
         margin: 0 4rem 0 0;
     }
+
+    #benefits .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefits .card {
+        width: calc(33.333% - 1.5rem);
+    }
 }
 
 /*desktop*/
@@ -151,6 +176,10 @@
 
     #planning .column {
         width: calc(50% - 4rem);
+    }
+
+    #benefits .cards {
+        display: flex;
     }
 }
 
