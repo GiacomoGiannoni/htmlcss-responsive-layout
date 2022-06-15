@@ -55,9 +55,12 @@
     margin-bottom: 3rem;
 }
 
-h1{
+h1,
+h2,
+h5{
     margin-bottom: 1rem;
 }
+
 /*sezione main*/
 #intro .card {
     margin-bottom: 1.5rem;
@@ -118,6 +121,23 @@ h1{
 }
 
 #about .column{
+    margin: 2rem;
+}
+
+/*start*/
+#start{
+    background-color: var(--secondary-color);
+}
+
+#start .container{
+    padding: 1.5rem;
+}
+
+#start .column {
+    margin: 2rem;
+}
+
+#start .box{
     margin: 2rem;
 }
 /*media query*/
