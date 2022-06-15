@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3684fd;
+    --primary-color-light: #b5ddff;
+
+    --secondary-color: #9792ef;
+    --secondary-color-light: #cbc9f1;
+
+    --text-color: #000;
+    --white-color: #fff;
+    --gray-color: #333;
+    --yellow-color: #fbc15f;
+}
+
+/* regole debug*/
+.debug .box {
+    height: 80px;
+    padding: 1rem;
+    background-color: var(--primary-color-light);
+}
+
+
+
+/* regole comuni */
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+.site-header {
+    width: 100%;
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+
+/*sezione main*/
+#intro .card {
+    margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    background-color: var(--primary-color-light);
+}
+
+/*intro*/
+#intro .cards {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+/*planning*/
+#planning {
+    background-color: var(--secondary-color);
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+#planning .column {
+    margin: 2rem;
+}
+
+/*testimonial*/
+
+#testimonial .card {
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+
+
+/*media query*/
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    #intro .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #intro .card:first-child {
+        width: calc(66.666% - 1.5rem);
+    }
+
+    #intro .card {
+        width: calc(33.333% - 1.5rem);
+    }
+
+    #testimonial .card {
+        display: flex;
+    }
+
+    #testimonial .card-text {
+        flex-grow: 1;
+    }
+
+    #testimonial .card-image {
+        flex-shrink: 0;
+        margin: 0 4rem 0 0;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+
+    #intro .cards:first-child {
+        display: flex;
+    }
+
+    .debug #intro .card:first-child .box {
+        width: 50%;
+    }
+
+    #planning .columns {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #planning .cloumn {
+        width: calc(50% - 4rem);
+    }
+}
+
+/*desktop grande*/
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
