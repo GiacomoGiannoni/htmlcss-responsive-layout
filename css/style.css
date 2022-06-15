@@ -89,6 +89,10 @@
     margin-bottom: 2rem;
 }
 
+#testimonial .card-image{
+    margin: 1rem;
+}
+
 
 
 /*media query*/
@@ -145,7 +149,7 @@
         align-items: flex-end;
     }
 
-    #planning .cloumn {
+    #planning .column {
         width: calc(50% - 4rem);
     }
 }
