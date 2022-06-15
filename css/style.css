@@ -88,6 +88,10 @@ h5{
 
 /*testimonial*/
 
+#testimonial{
+    margin-top: 1.5rem;
+}
+
 #testimonial .card {
     padding: 2rem;
     background-color: var(--secondary-color);
@@ -140,6 +144,29 @@ h5{
 #start .box{
     margin: 2rem;
 }
+
+/*footer*/
+
+footer{
+    background-color: var(--gray-color);
+}
+
+footer .container{
+    padding: 1.5rem;
+}
+
+footer .column {
+    margin: 2rem;
+}
+
+footer .box:first-child{
+    margin-bottom: 4rem;
+}
+
+footer .box{
+    margin: 2rem;
+}
+
 /*media query*/
 
 /*tablet*/
