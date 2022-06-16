@@ -242,7 +242,7 @@ h5{
     width: 200px
 }
 
-#testimonial .text {
+#testimonial .card .text {
     color: var(--white-color);
     line-height: 1.8rem;
 }
@@ -252,7 +252,14 @@ h5{
     margin: 1.5rem 0rem;
 }
 
+#testimonial .pre-block {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
+#testimonial .title {
+    color: var(--secondary-color);
+}
 
 /*benefits*/
 #benefits{
