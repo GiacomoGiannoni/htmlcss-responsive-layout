@@ -133,9 +133,8 @@ h5{
     text-decoration: none;
 }
 
-
-
 /*sezione main*/
+/*intro*/
 #intro .card {
     margin-bottom: 1.5rem;
     margin-left: 0.75rem;
@@ -144,7 +143,6 @@ h5{
     padding: 2rem;
 }
 
-/*intro*/
 #intro .cards {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
@@ -167,12 +165,6 @@ h5{
 #intro .title{
     color: var(--primary-color);
     margin: 1.5rem 0rem;
-
-}
-
-#intro .text {
-    color: var(--gray-color);
-    line-height: 1.8rem;
 }
 
 /*planning*/
@@ -186,6 +178,46 @@ h5{
     margin: 2rem;
 }
 
+#planning .image {
+    width: 80%;
+    display: block;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#planning .text {
+    color: var(--white-color);
+    line-height: 1.8rem;
+}
+
+#planning .title{
+    color: var(--white-color);
+    margin: 1.5rem 0rem;
+}
+
+#planning .cl-2{
+    color: var(--text-color);
+}
+
+#planning .image-small {
+    width: 50%;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+#planning .column:last-child{
+    background-color: var(--white-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+#planning .back{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
 /*testimonial*/
 
 #testimonial{
@@ -288,7 +320,7 @@ footer .box{
         width: calc(33.333% - 1.5rem);
     }
 
-    #testimonial .card {
+    #testimonial .card, #about .columns {
         display: flex;
     }
 
