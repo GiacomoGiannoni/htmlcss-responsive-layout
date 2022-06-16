@@ -228,11 +228,31 @@ h5{
     padding: 2rem;
     background-color: var(--secondary-color);
     margin-bottom: 2rem;
+    align-items: center;
 }
 
 #testimonial .card-image{
     margin: 1rem;
 }
+
+#testimonial img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px
+}
+
+#testimonial .text {
+    color: var(--white-color);
+    line-height: 1.8rem;
+}
+
+#testimonial .card .title{
+    color: var(--white-color);
+    margin: 1.5rem 0rem;
+}
+
+
 
 /*benefits*/
 #benefits{
