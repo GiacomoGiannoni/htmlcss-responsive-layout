@@ -377,10 +377,44 @@ h5{
 
 #start .column {
     margin: 2rem;
+    text-align: center;
 }
 
 #start .box{
     margin: 2rem;
+}
+
+#start .pre-title {
+    color: var(--gray-color);
+}
+
+#start .subtitle {
+    color: var(--white-color);
+    font-size: 22px;
+}
+
+#start .title {
+    color: var(--yellow-color);
+    margin: 1rem 0rem;
+    font-size: 50px;
+}
+
+#start .text {
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+#start .text a {
+    color: var(--white-color);
+}
+
+#start .btn {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-bottom: 1rem;
 }
 
 /*footer*/
@@ -395,6 +429,7 @@ footer .container{
 
 footer .column {
     margin: 2rem;
+    text-align: center;
 }
 
 footer .box:first-child{
@@ -403,6 +438,16 @@ footer .box:first-child{
 
 footer .box{
     margin: 2rem;
+}
+
+footer .text {
+    color: var(--white-color);
+    font-size: 13px;
+    margin: 1rem 0rem;
+}
+
+footer .text a {
+    color: var(--secondary-color);
 }
 
 /*media query*/
