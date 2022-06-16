@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 :root {
@@ -17,6 +18,10 @@
     --yellow-color: #fbc15f;
 }
 
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
 /* regole debug*/
 .debug .box {
     height: 80px;
@@ -32,8 +37,16 @@
     margin: auto;
 }
 
+section{
+    scroll-margin-top: 130px;
+}
+
 .px-2 {
     padding: 0 2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
 }
 
 .flex {
@@ -48,18 +61,79 @@
     align-items: center;
 }
 
-
-.site-header {
-    width: 100%;
-    background-color: var(--primary-color);
-    margin-bottom: 3rem;
-}
-
 h1,
 h2,
 h5{
     margin-bottom: 1rem;
 }
+
+.text-white {
+    color: var(--white-color);
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+}
+
+.btn-small {
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/*sezione header*/
+#intro .image {
+    width: 80%;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.site-header {
+    width: 100%;
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.main-menu{
+    display: none;
+}  
+
+.main-menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.main-menu li {
+    padding: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+}
+
+
 
 /*sezione main*/
 #intro .card {
@@ -67,12 +141,38 @@ h5{
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     background-color: var(--primary-color-light);
+    padding: 2rem;
 }
 
 /*intro*/
 #intro .cards {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
+}
+
+#intro .card:first-child {
+    padding: 2rem 2rem 0 2rem;
+}
+
+#intro i{
+    margin-right: 5px;
+    color: var(--white-color);
+}
+
+#intro i.big{
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+#intro .title{
+    color: var(--primary-color);
+    margin: 1.5rem 0rem;
+
+}
+
+#intro .text {
+    color: var(--gray-color);
+    line-height: 1.8rem;
 }
 
 /*planning*/
@@ -184,7 +284,7 @@ footer .box{
         width: calc(66.666% - 1.5rem);
     }
 
-    #intro .card {
+    #intro .card, #benefits .card {
         width: calc(33.333% - 1.5rem);
     }
 
@@ -206,10 +306,6 @@ footer .box{
         flex-wrap: wrap;
     }
 
-    #benefits .card {
-        width: calc(33.333% - 1.5rem);
-    }
-
     #about .columns {
         display: flex;
     }
@@ -221,6 +317,12 @@ footer .box{
     #about .column{
         width: calc(33.333% - 4rem);
     }
+
+    #intro .image {
+        width: 50%;
+        display: block;
+        margin: 2rem 0 0 0;
+    }
 }
 
 /*desktop*/
@@ -229,7 +331,7 @@ footer .box{
         max-width: 940px;
     }
 
-    #intro .cards:first-child {
+    #intro .cards:first-child, #benefits .cards, #about .columns {
         display: flex;
     }
 
@@ -242,23 +344,17 @@ footer .box{
         align-items: flex-end;
     }
 
-    #planning .column {
+    #planning .column, #about .column {
         width: calc(50% - 4rem);
     }
 
-    #benefits .cards {
-        display: flex;
+    .main-menu{
+        display: block;
     }
 
-    #about .columns {
-        display: flex;
+    .hamburger{
+        display: none;
     }
-
-    #about .column {
-        width: calc(50% - 4rem);
-    }
-
-
 }
 
 /*desktop grande*/
