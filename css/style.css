@@ -319,6 +319,53 @@ h5{
     margin: 2rem;
 }
 
+#about img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    
+}
+
+#about .column .title {
+    color: var(--secondary-color);
+    font-size: 40px;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+#about .column .text {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+#about .image {
+    text-align: center;
+    position: relative;
+}
+
+#about .image i {
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 80px;
+    top: 0;
+    right: 80px;
+}
+
+#about .column .subtitle{
+    color: var(--secondary-color);
+    margin: 1rem 0rem;
+    font-size: 20px;
+}
+
+#about .btn {
+    background-color: var(--secondary-color);
+    font-size: 12px;
+}
+
+#about .btn i{
+    margin-right: 3px;
+}
+
 /*start*/
 #start{
     background-color: var(--secondary-color);
@@ -413,6 +460,14 @@ footer .box{
         width: 50%;
         display: block;
         margin: 2rem 0 0 0;
+    }
+
+    #about .image i {
+        position: absolute;
+        color: var(--secondary-color);
+        font-size: 80px;
+        top: 0;
+        right: 50px;
     }
 }
 
